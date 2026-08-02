@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="720" viewBox="0 0 1800 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="1800" height="720" fill="#d8cdc2"/>
+  <g opacity="0.88">
+    <image href="hero-red-collage.png" x="-90" y="-260" width="520" height="925" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="250" y="-500" width="480" height="853" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="540" y="-190" width="500" height="889" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="870" y="-460" width="500" height="889" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="1190" y="-230" width="520" height="925" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="1510" y="-520" width="470" height="836" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <g opacity="0.58" style="mix-blend-mode:multiply">
+    <image href="hero-red-collage.png" x="80" y="-120" width="360" height="640" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="640" y="-80" width="390" height="693" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="1110" y="-100" width="370" height="658" preserveAspectRatio="xMidYMid slice"/>
+    <image href="hero-red-collage.png" x="1450" y="-40" width="330" height="587" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <rect width="1800" height="720" fill="#2b1b17" opacity="0.12"/>
+  <rect width="1800" height="720" fill="#e2d8cf" opacity="0.16"/>
+</svg>
