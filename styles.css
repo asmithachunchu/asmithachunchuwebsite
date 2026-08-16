@@ -1559,6 +1559,10 @@ nav a.active {
   border: 1px solid rgba(247, 236, 230, 0.28);
 }
 
+.pacsun-work-card {
+  overflow: hidden;
+}
+
 .pacsun-work-card img {
   object-fit: contain;
   object-position: center;
@@ -2150,8 +2154,8 @@ body.case-study-page {
 .project-card.filters-project {
   grid-column: auto;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(320px, 1fr) auto;
-  min-height: 600px;
+  grid-template-rows: auto auto;
+  min-height: auto;
   border-radius: 42px 0 42px 0;
 }
 
@@ -2211,13 +2215,35 @@ body.case-study-page {
   background: #e2d5cc;
 }
 
+.royal-work-card img[src*="keep-it-filtered"] {
+  width: calc(100% + 10px);
+  max-width: none;
+  transform: translateX(-5px);
+}
+
+.case-study-page .case-feature > img[src*="keep-it-filtered"] {
+  width: calc(100% + 10px);
+  max-width: none;
+  transform: translateX(-5px);
+}
+
+.project-card.filters-project .project-image-visual {
+  min-height: auto;
+}
+
 .project-card.filters-project .project-image-visual img {
+  width: calc(100% + 10px);
+  max-width: none;
+  height: auto;
+  aspect-ratio: 1.7875 / 1;
   object-fit: contain;
   padding: 0;
+  transform: translateX(-5px);
 }
 
 .project-card.filters-project .project-image-visual,
 .pacsun-case-feature {
+  overflow: hidden;
   background: #e2d5cc;
 }
 
@@ -2868,6 +2894,18 @@ body.case-study-page {
     object-position: center;
   }
 
+  .project-card.filters-project .project-image-visual {
+    min-height: auto;
+  }
+
+  .project-card.filters-project .project-image-visual img {
+    width: calc(100% + 10px);
+    max-width: none;
+    height: auto;
+    aspect-ratio: 1.7875 / 1;
+    transform: translateX(-5px);
+  }
+
   .royal-hero {
     min-height: auto;
     padding: 30px 22px 0;
@@ -3116,6 +3154,18 @@ body.case-study-page {
   .project-image-visual img,
   .project-card.filters-project .project-image-visual img {
     object-fit: contain;
+  }
+
+  .project-card.filters-project .project-image-visual {
+    min-height: auto;
+  }
+
+  .project-card.filters-project .project-image-visual img {
+    width: calc(100% + 10px);
+    max-width: none;
+    height: auto;
+    aspect-ratio: 1.7875 / 1;
+    transform: translateX(-5px);
   }
 
   .home-shell {
