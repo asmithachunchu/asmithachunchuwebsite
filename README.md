@@ -1,6 +1,6 @@
 # Asmitha Chunchu Portfolio
 
-Static portfolio website for Asmitha Chunchu, an aspiring product designer.
+Static portfolio website for Asmitha Chunchu, an aspiring digital product designer.
 
 ## Local Preview
 
