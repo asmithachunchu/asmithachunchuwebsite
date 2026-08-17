@@ -1564,9 +1564,13 @@ nav a.active {
 }
 
 .pacsun-work-card img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   background: #f0e6df;
+}
+
+.pacsun-work-card img[src*="backpac-intranet-revamp"] {
+  border: 0;
 }
 
 .royal-work-card p,
@@ -2228,7 +2232,7 @@ body.case-study-page {
 .project-card.filters-project .project-image-visual img,
 .royal-work-card img[src*="keep-it-filtered"],
 .case-study-page .case-feature > img[src*="keep-it-filtered"] {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   background: #e2d5cc;
 }
@@ -2252,13 +2256,13 @@ body.case-study-page {
 }
 
 .project-card.filters-project .project-image-visual img {
-  width: calc(100% + 10px);
+  width: calc(100% + 14px);
   max-width: none;
   height: 100%;
   aspect-ratio: 1.7875 / 1;
   object-fit: cover;
   padding: 0;
-  transform: translateX(-5px);
+  transform: translateX(-7px);
 }
 
 .project-card.filters-project .project-image-visual,
@@ -2910,7 +2914,7 @@ body.case-study-page {
 
   .project-image-visual img,
   .project-card.filters-project .project-image-visual img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
 
@@ -2920,12 +2924,12 @@ body.case-study-page {
   }
 
   .project-card.filters-project .project-image-visual img {
-    width: calc(100% + 10px);
+    width: calc(100% + 14px);
     max-width: none;
     height: 100%;
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
-    transform: translateX(-5px);
+    transform: translateX(-7px);
   }
 
   .royal-hero {
@@ -3175,7 +3179,7 @@ body.case-study-page {
 
   .project-image-visual img,
   .project-card.filters-project .project-image-visual img {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .project-card.filters-project .project-image-visual {
@@ -3184,12 +3188,12 @@ body.case-study-page {
   }
 
   .project-card.filters-project .project-image-visual img {
-    width: calc(100% + 10px);
+    width: calc(100% + 14px);
     max-width: none;
     height: 100%;
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
-    transform: translateX(-5px);
+    transform: translateX(-7px);
   }
 
   .home-shell {
