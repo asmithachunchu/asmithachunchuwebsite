@@ -1406,6 +1406,7 @@ nav a.active {
   letter-spacing: 0;
   line-height: 0.7;
   text-transform: uppercase;
+  transform: translateX(clamp(18px, 2vw, 32px));
   white-space: normal;
 }
 
@@ -1427,6 +1428,7 @@ nav a.active {
   max-width: 620px;
   margin-left: clamp(12px, 2.5vw, 42px);
   padding-top: 0;
+  transform: translateX(clamp(18px, 2vw, 32px));
 }
 
 .royal-intro::before {
@@ -1512,8 +1514,8 @@ nav a.active {
   grid-row: 2 / 4;
   align-self: center;
   justify-self: end;
-  width: min(450px, 34vw);
-  min-width: 315px;
+  width: min(490px, 36vw);
+  min-width: 340px;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(194, 161, 134, 0.46);
@@ -3030,16 +3032,18 @@ body.case-study-page {
   .royal-hero > h1 {
     margin-top: 18px;
     font-size: clamp(3.5rem, 13vw, 6.4rem);
+    transform: none;
   }
 
   .royal-intro {
     max-width: none;
     margin-left: 0;
+    transform: none;
   }
 
   .royal-portrait {
     justify-self: center;
-    width: min(385px, 86vw);
+    width: min(420px, 90vw);
     min-width: 0;
     transform: none;
   }
