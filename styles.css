@@ -1573,6 +1573,11 @@ nav a.active {
   border: 0;
 }
 
+.pacsun-work-card img[src*="keep-it-filtered"] {
+  border-bottom: 0;
+  margin-bottom: -1px;
+}
+
 .royal-work-card p,
 .royal-work-card h2,
 .royal-work-card span {
@@ -2258,11 +2263,11 @@ body.case-study-page {
 .project-card.filters-project .project-image-visual img {
   width: calc(100% + 14px);
   max-width: none;
-  height: 100%;
+  height: calc(100% + 2px);
   aspect-ratio: 1.7875 / 1;
   object-fit: cover;
   padding: 0;
-  transform: translateX(-7px);
+  transform: translate(-7px, -1px);
 }
 
 .project-card.filters-project .project-image-visual,
@@ -2926,7 +2931,7 @@ body.case-study-page {
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 14px);
     max-width: none;
-    height: 100%;
+    height: calc(100% + 2px);
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
     transform: translateX(-7px);
@@ -3190,7 +3195,7 @@ body.case-study-page {
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 14px);
     max-width: none;
-    height: 100%;
+    height: calc(100% + 2px);
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
     transform: translateX(-7px);
