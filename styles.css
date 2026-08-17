@@ -2258,16 +2258,17 @@ body.case-study-page {
   aspect-ratio: 1.7875 / 1;
   min-height: auto;
   max-height: none;
+  margin-bottom: -18px;
 }
 
 .project-card.filters-project .project-image-visual img {
   width: calc(100% + 14px);
   max-width: none;
-  height: calc(100% + 2px);
+  height: calc(100% + 20px);
   aspect-ratio: 1.7875 / 1;
   object-fit: cover;
   padding: 0;
-  transform: translate(-7px, -1px);
+  transform: translate(-7px, -10px);
 }
 
 .project-card.filters-project .project-image-visual,
@@ -2926,15 +2927,16 @@ body.case-study-page {
   .project-card.filters-project .project-image-visual {
     aspect-ratio: 1.7875 / 1;
     min-height: auto;
+    margin-bottom: -18px;
   }
 
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 14px);
     max-width: none;
-    height: calc(100% + 2px);
+    height: calc(100% + 20px);
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
-    transform: translateX(-7px);
+    transform: translate(-7px, -10px);
   }
 
   .royal-hero {
@@ -3190,15 +3192,16 @@ body.case-study-page {
   .project-card.filters-project .project-image-visual {
     aspect-ratio: 1.7875 / 1;
     min-height: auto;
+    margin-bottom: -18px;
   }
 
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 14px);
     max-width: none;
-    height: calc(100% + 2px);
+    height: calc(100% + 20px);
     aspect-ratio: 1.7875 / 1;
     object-fit: cover;
-    transform: translateX(-7px);
+    transform: translate(-7px, -10px);
   }
 
   .home-shell {
