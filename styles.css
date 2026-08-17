@@ -2136,6 +2136,17 @@ body.case-study-page {
   color: var(--cream);
 }
 
+.case-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.case-link-grid .case-link {
+  margin-top: 0;
+}
+
 .project-card:nth-child(1) {
   grid-column: 1 / -1;
   grid-template-columns: minmax(320px, 0.9fr) minmax(320px, 1fr);
@@ -2207,6 +2218,13 @@ body.case-study-page {
   object-position: center;
 }
 
+.project-card.backpac-project .project-image-visual img,
+.royal-work-card img[src*="backpac-intranet-revamp"],
+.case-study-page .case-feature > img[src*="backpac-intranet-revamp"] {
+  object-fit: cover;
+  object-position: center;
+}
+
 .project-card.filters-project .project-image-visual img,
 .royal-work-card img[src*="keep-it-filtered"],
 .case-study-page .case-feature > img[src*="keep-it-filtered"] {
@@ -2228,15 +2246,17 @@ body.case-study-page {
 }
 
 .project-card.filters-project .project-image-visual {
+  aspect-ratio: 1.7875 / 1;
   min-height: auto;
+  max-height: none;
 }
 
 .project-card.filters-project .project-image-visual img {
   width: calc(100% + 10px);
   max-width: none;
-  height: auto;
+  height: 100%;
   aspect-ratio: 1.7875 / 1;
-  object-fit: contain;
+  object-fit: cover;
   padding: 0;
   transform: translateX(-5px);
 }
@@ -2895,14 +2915,16 @@ body.case-study-page {
   }
 
   .project-card.filters-project .project-image-visual {
+    aspect-ratio: 1.7875 / 1;
     min-height: auto;
   }
 
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 10px);
     max-width: none;
-    height: auto;
+    height: 100%;
     aspect-ratio: 1.7875 / 1;
+    object-fit: cover;
     transform: translateX(-5px);
   }
 
@@ -3157,14 +3179,16 @@ body.case-study-page {
   }
 
   .project-card.filters-project .project-image-visual {
+    aspect-ratio: 1.7875 / 1;
     min-height: auto;
   }
 
   .project-card.filters-project .project-image-visual img {
     width: calc(100% + 10px);
     max-width: none;
-    height: auto;
+    height: 100%;
     aspect-ratio: 1.7875 / 1;
+    object-fit: cover;
     transform: translateX(-5px);
   }
 
