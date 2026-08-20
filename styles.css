@@ -1634,7 +1634,7 @@ nav a.active {
   background: #f0ddcf;
 }
 
-.pacsun-work-card img[src*="backpac-intranet-revamp"] {
+.pacsun-work-card img[src*="backpac-intranet"] {
   border: 0;
 }
 
@@ -2073,6 +2073,17 @@ h2 {
   background: #f1e5df;
 }
 
+.logo-pacsun-dark {
+  border-color: rgba(194, 161, 134, 0.52);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(194, 161, 134, 0.22), transparent 30%),
+    linear-gradient(135deg, #2f090e 0%, #451017 100%);
+}
+
+.logo-pacsun-dark img {
+  filter: brightness(0) invert(1);
+}
+
 .logo-design-uci {
   background: #f1e5df;
 }
@@ -2313,8 +2324,8 @@ body.case-study-page {
 }
 
 .project-card.backpac-project .project-image-visual img,
-.royal-work-card img[src*="backpac-intranet-revamp"],
-.case-study-page .case-feature > img[src*="backpac-intranet-revamp"] {
+.royal-work-card img[src*="backpac-intranet"],
+.case-study-page .case-feature > img[src*="backpac-intranet"] {
   object-fit: cover;
   object-position: center;
 }
@@ -2521,7 +2532,22 @@ body.case-study-page {
 }
 
 .back-link {
+  position: sticky;
+  top: 96px;
+  z-index: 20;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   margin: 0 0 30px;
+  padding: 0;
+  background: rgba(240, 221, 207, 0.88);
+  box-shadow: 0 12px 28px rgba(47, 9, 14, 0.12);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1;
+  text-transform: none;
 }
 
 .case-hero {
@@ -2530,6 +2556,53 @@ body.case-study-page {
   gap: clamp(26px, 5vw, 64px);
   align-items: end;
   padding-bottom: clamp(30px, 5vw, 54px);
+}
+
+.ecommerce-case .case-hero {
+  grid-template-columns: minmax(420px, 0.78fr) minmax(360px, 520px);
+  gap: clamp(20px, 2.4vw, 34px);
+  align-items: stretch;
+  padding-bottom: clamp(18px, 3.4vw, 34px);
+}
+
+.ecommerce-case .case-hero > div {
+  max-width: 720px;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 6px 0;
+}
+
+.ecommerce-case .case-hero > div > p:last-child {
+  margin-top: auto;
+  padding-top: clamp(24px, 4vw, 62px);
+}
+
+.backpac-case-hero {
+  align-items: start;
+  padding-bottom: clamp(18px, 3vw, 30px);
+}
+
+.backpac-case-hero > div {
+  padding-top: 6px;
+}
+
+@media (min-width: 861px) {
+  .backpac-case-hero {
+    align-items: stretch;
+  }
+
+  .backpac-case-hero > div {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    padding: 6px 0;
+  }
+
+  .backpac-case-hero > div > p:last-child {
+    margin-top: auto;
+    padding-top: clamp(24px, 4vw, 62px);
+  }
 }
 
 .case-hero h1 {
@@ -2589,14 +2662,312 @@ body.case-study-page {
 }
 
 .case-feature .project-visual,
-.case-feature > img {
+.case-feature > img,
+.case-feature > a,
+.case-feature > a > img {
   min-height: clamp(360px, 48vw, 520px);
+}
+
+.case-feature > a {
+  display: block;
+}
+
+.case-feature > a > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .case-section {
   max-width: 860px;
   padding: clamp(32px, 5vw, 58px) 0;
   border-top: 1px solid rgba(159, 120, 94, 0.34);
+}
+
+.filter-strategy-section {
+  padding-bottom: clamp(18px, 2.4vw, 28px);
+}
+
+.backpac-strategy-section {
+  padding-bottom: clamp(18px, 2.4vw, 28px);
+}
+
+.filter-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 30px);
+  margin: clamp(4px, 1.2vw, 14px) 0 clamp(26px, 5vw, 56px);
+}
+
+.filter-comparison figure {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-comparison figcaption {
+  max-width: 340px;
+  margin: 16px auto 0;
+  color: var(--cherry);
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  font-weight: 760;
+  line-height: 1.45;
+}
+
+.filter-comparison .phone-mockup {
+  width: min(100%, 285px);
+  padding: 7px;
+  border-width: 4px;
+  border-radius: 38px;
+}
+
+.filter-comparison .phone-mockup::before {
+  top: 14px;
+  width: 70px;
+  height: 22px;
+}
+
+.filter-comparison .phone-mockup::after {
+  inset: 7px;
+  border-radius: 31px;
+}
+
+.filter-comparison .phone-mockup img {
+  border-radius: 31px;
+}
+
+.phone-mockup {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 390 / 844;
+  margin: 0 auto;
+  padding: 9px;
+  border: 5px solid #0a0a0a;
+  border-radius: 46px;
+  background: #0a0a0a;
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.phone-mockup::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  z-index: 2;
+  width: 94px;
+  height: 30px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #030303;
+}
+
+.phone-mockup::after {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  pointer-events: none;
+  border-radius: 38px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    inset 10px 0 18px rgba(255, 255, 255, 0.08);
+}
+
+.phone-mockup img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 38px;
+  background: #fff;
+}
+
+.stayfit-mockups {
+  margin: clamp(20px, 4vw, 46px) 0 clamp(30px, 5vw, 58px);
+}
+
+.stayfit-fidelity-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 30px);
+}
+
+.stayfit-fidelity-card {
+  min-width: 0;
+  padding: clamp(18px, 2.6vw, 28px);
+  border: 1px solid rgba(159, 120, 94, 0.26);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(194, 161, 134, 0.18), transparent 30%),
+    rgba(240, 221, 207, 0.58);
+}
+
+.stayfit-high-card {
+  margin-top: clamp(18px, 3vw, 30px);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(194, 161, 134, 0.16), transparent 28%),
+    rgba(240, 221, 207, 0.7);
+}
+
+.stayfit-phone-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(10px, 1.6vw, 18px);
+  margin-top: 18px;
+}
+
+.stayfit-phone {
+  flex: 0 1 auto;
+  width: min(42%, 150px);
+  padding: 6px;
+  border-width: 4px;
+  border-radius: 28px;
+}
+
+.stayfit-phone::before {
+  top: 12px;
+  width: 48px;
+  height: 16px;
+}
+
+.stayfit-phone::after {
+  inset: 6px;
+  border-radius: 22px;
+}
+
+.stayfit-phone img {
+  object-fit: contain;
+  border-radius: 22px;
+}
+
+.stayfit-low-phone img {
+  padding: 8px;
+}
+
+.stayfit-phone-row-three {
+  gap: clamp(7px, 1vw, 12px);
+}
+
+.stayfit-phone-row-three .stayfit-phone {
+  width: min(31%, 126px);
+}
+
+.stayfit-high-row {
+  gap: clamp(20px, 4vw, 42px);
+}
+
+.stayfit-high-phone {
+  width: min(42%, 290px);
+  padding: 8px;
+  border-width: 5px;
+  border-radius: 42px;
+}
+
+.stayfit-high-phone::before {
+  display: none;
+}
+
+.stayfit-high-phone::after {
+  inset: 8px;
+  border-radius: 34px;
+}
+
+.stayfit-high-phone img {
+  border-radius: 34px;
+}
+
+.stayfit-high-row .stayfit-high-phone:nth-child(2) img {
+  transform: scale(1.035);
+  transform-origin: center top;
+}
+
+.fidelity-caption {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: var(--cherry);
+  font-size: clamp(0.9rem, 1.1vw, 0.98rem);
+  font-weight: 760;
+  line-height: 1.45;
+}
+
+.laptop-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(36px, 5vw, 68px);
+  margin: clamp(4px, 1.2vw, 14px) 0 clamp(26px, 5vw, 56px);
+}
+
+.laptop-showcase figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.laptop-mockup {
+  position: relative;
+  margin-bottom: clamp(34px, 4vw, 46px);
+  padding: clamp(4px, 0.65vw, 6px);
+  border: 2px solid #9b9d9f;
+  border-bottom-width: 5px;
+  border-radius: 16px 16px 8px 8px;
+  background:
+    linear-gradient(180deg, #171717 0%, #050505 100%);
+  box-shadow:
+    0 14px 24px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.laptop-mockup::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  width: 106%;
+  height: 12px;
+  transform: translateX(-50%);
+  border-radius: 0 0 34px 34px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.8), transparent 46%),
+    linear-gradient(180deg, #f2f1ed 0%, #c7c3bd 58%, #8d8984 100%);
+  clip-path: polygon(3% 0, 97% 0, 100% 100%, 0 100%);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.16);
+}
+
+.laptop-mockup::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  z-index: 1;
+  width: 76px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(180deg, rgba(100, 96, 92, 0.26), rgba(255, 255, 255, 0.42));
+}
+
+.laptop-mockup img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: contain;
+  object-position: center top;
+  border-radius: 10px;
+  background: #050505;
+}
+
+.laptop-showcase figcaption {
+  max-width: 680px;
+  margin: 10px auto 0;
+  color: var(--cherry);
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  font-weight: 760;
+  line-height: 1.45;
 }
 
 .case-section h2,
@@ -3329,6 +3700,108 @@ body.case-study-page {
   .case-hero {
     align-items: start;
   }
+
+  .back-link {
+    top: 150px;
+    margin-bottom: 22px;
+  }
+
+  .case-study-page .case-feature > img[src*="backpac-intranet"] {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: #140f10;
+  }
+
+  .case-study-page .pacsun-case-feature:has(img[src*="backpac-intranet"]) {
+    min-height: 0;
+    background: #140f10;
+  }
+
+  .case-study-page .case-feature > a > img[src*="keep-it-filtered"],
+  .case-study-page .case-feature > img[src*="keep-it-filtered"] {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: #fbf8f5;
+  }
+
+  .case-study-page .case-feature > a:has(img[src*="keep-it-filtered"]) {
+    min-height: 0;
+    height: auto;
+  }
+
+  .case-study-page .pacsun-case-feature:has(img[src*="keep-it-filtered"]) {
+    min-height: 0;
+    background: #fbf8f5;
+  }
+
+  .case-study-page .case-feature > img[src*="design-uci"] {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: #f4fbff;
+  }
+
+  .case-study-page .case-feature > img[src*="dsp-homepage"] {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: #1c1b2b;
+  }
+
+  .ecommerce-case .case-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .ecommerce-case .case-hero > div {
+    display: block;
+    min-height: 0;
+    padding: 0;
+  }
+
+  .ecommerce-case .case-hero > div > p:last-child {
+    margin-top: 0;
+  }
+
+  .filter-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .stayfit-fidelity-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stayfit-phone-row {
+    flex-wrap: wrap;
+  }
+
+  .stayfit-phone,
+  .stayfit-phone-row-three .stayfit-phone {
+    width: min(44%, 150px);
+  }
+
+  .stayfit-high-phone {
+    width: min(46%, 260px);
+  }
+
+  .laptop-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-mockup {
+    width: min(100%, 340px);
+    border-radius: 42px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -3421,16 +3894,81 @@ body.case-study-page {
   }
 
   .royal-hero > h1 {
-    font-size: clamp(3.2rem, 17vw, 4.9rem);
+    max-width: calc(100vw - 44px);
+    font-size: clamp(2.75rem, 14vw, 4.25rem);
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .royal-hero > h1 span {
+    white-space: normal;
   }
 
   .royal-quick-notes {
     grid-template-columns: 1fr;
+    width: min(100%, 340px);
+    justify-self: center;
   }
 
   .royal-portrait img {
     height: auto;
     aspect-ratio: 4 / 5;
+  }
+
+  .royal-hero {
+    justify-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .royal-topline {
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .royal-topline span:last-child {
+    text-align: center;
+  }
+
+  .royal-intro {
+    width: min(100%, 350px);
+    justify-self: center;
+    text-align: center;
+  }
+
+  .royal-intro .title-line,
+  .royal-intro p:not(.title-line):not(.signature) {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .royal-contact {
+    width: 100%;
+    padding-inline: 20px;
+    overflow: hidden;
+  }
+
+  .royal-contact h2,
+  .royal-contact .signature {
+    max-width: 100%;
+  }
+
+  .royal-contact .contact-list {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .royal-contact .contact-list a {
+    min-width: 0;
+    max-width: 100%;
+    gap: 10px;
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: nowrap;
+    font-size: clamp(0.74rem, 3.45vw, 0.92rem);
   }
 
   .royal-contact .contact-list a {

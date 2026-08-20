@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Design @ UCI Case Study | Asmitha Chunchu</title>
     <meta name="description" content="Design @ UCI accessible workout app case study by Asmitha Chunchu.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260820-stayfit-second-phone">
   </head>
   <body class="case-study-page">
     <header class="site-header" aria-label="Primary navigation">
@@ -18,7 +18,7 @@
     </header>
 
     <main class="page-shell case-study-shell">
-      <a class="back-link" href="gallery.html">Back to Design Work</a>
+      <button class="back-link" type="button" aria-label="Go back" onclick="if (history.length > 1) { history.back(); } else { window.location.href = 'gallery.html'; }">←</button>
 
       <section class="case-hero">
         <div>
@@ -48,6 +48,79 @@
           The challenge was to design a system that could support older adults through accessible workout discovery,
           guided exercise flows, class scheduling, and community touchpoints without overwhelming the user.
         </p>
+      </section>
+
+      <section class="case-section">
+        <p class="eyebrow">Opportunity</p>
+        <h2>Reduce the intimidation of starting a new wellness routine.</h2>
+        <p>
+          Older users needed more than a workout library. The product had to guide them toward safe routines, make
+          scheduling feel predictable, and create a light sense of community so fitness felt easier to return to.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <p class="eyebrow">Ownership</p>
+        <h2>I shaped the product system around accessibility and repeat use.</h2>
+        <p>
+          I designed the core app structure, prototyped guided exercise and scheduling flows, and used testing feedback
+          to refine how users moved between workouts, classes, and community features.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <p class="eyebrow">Design Strategy</p>
+        <h2>Keep each action visible, readable, and low-pressure.</h2>
+        <p>
+          The interface focused on clear hierarchy, larger touch targets, direct labels, and simple progress cues so
+          users could understand what to do next without relying on memory or complex navigation.
+        </p>
+      </section>
+
+      <section class="stayfit-mockups" aria-label="StayFit fidelity mockups">
+        <div class="stayfit-fidelity-row">
+          <article class="stayfit-fidelity-card">
+            <p class="eyebrow">Low Fidelity</p>
+            <div class="stayfit-phone-row">
+              <div class="phone-mockup stayfit-phone stayfit-low-phone">
+                <img src="assets/project-screens/stayfit-low-quiz.png" alt="Low-fidelity StayFit intro quiz sketch inside an iPhone frame.">
+              </div>
+              <div class="phone-mockup stayfit-phone stayfit-low-phone">
+                <img src="assets/project-screens/stayfit-low-recommendations.png" alt="Low-fidelity StayFit recommended workouts sketch inside an iPhone frame.">
+              </div>
+            </div>
+            <p class="fidelity-caption">Early sketches mapped the onboarding quiz and personalized workout recommendation flow.</p>
+          </article>
+
+          <article class="stayfit-fidelity-card">
+            <p class="eyebrow">Mid Fidelity</p>
+            <div class="stayfit-phone-row stayfit-phone-row-three">
+              <div class="phone-mockup stayfit-phone stayfit-mid-phone">
+                <img src="assets/project-screens/stayfit-mid-intake.png" alt="Mid-fidelity StayFit intake form inside an iPhone frame.">
+              </div>
+              <div class="phone-mockup stayfit-phone stayfit-mid-phone">
+                <img src="assets/project-screens/stayfit-mid-plan-card.png" alt="Mid-fidelity StayFit workout plan preview inside an iPhone frame.">
+              </div>
+              <div class="phone-mockup stayfit-phone stayfit-mid-phone">
+                <img src="assets/project-screens/stayfit-mid-expanded-plan.png" alt="Mid-fidelity StayFit expanded workout plan inside an iPhone frame.">
+              </div>
+            </div>
+            <p class="fidelity-caption">Mid-fidelity screens tested the plan builder, recommendation card, and expanded schedule view.</p>
+          </article>
+        </div>
+
+        <article class="stayfit-fidelity-card stayfit-high-card">
+          <p class="eyebrow">High Fidelity</p>
+          <div class="stayfit-phone-row stayfit-high-row">
+            <div class="phone-mockup stayfit-phone stayfit-high-phone">
+              <img src="assets/project-screens/stayfit-high-age.png" alt="High-fidelity StayFit age group selection screen inside an iPhone frame.">
+            </div>
+            <div class="phone-mockup stayfit-phone stayfit-high-phone">
+              <img src="assets/project-screens/stayfit-high-plan.png" alt="High-fidelity StayFit personalized workout plan screen inside an iPhone frame.">
+            </div>
+          </div>
+          <p class="fidelity-caption">High-fidelity screens brought the onboarding and personalized plan experience into a polished mobile interface.</p>
+        </article>
       </section>
 
       <section class="process-grid">
